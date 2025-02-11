@@ -1,133 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the home of unlimited enjoyment. offering amazing recipees
-    scrumptious snacks an delicious intercontinental delicacy.">
-    <title>johnny bakery</title>
+    <title>Minister Of stomach|| Affairs</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-    <div class="hello">
-        <header>
-            <h1>Jevemy styles lives</h1>
-            <p>Creating Culinary Magic</p>
+    <audio src="Alan-Walker-feat-Sophia-Somajo-Diamond-Heart-(RawPraise.ng).mp3" autoplay loop></audio>
+
+    <div class="glass-headero">
+        <header class="welcome-header">
+            <div class="logo">
+                <img src="logo.png" alt="">
+                <h1>Minister of Stomach Affairs</h1>
+            </div>
+        
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Login</a>
+                <a href="signup.html" class="btn signup-btn">Sign Up</a>
+            </div>
+        
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </header>
     </div>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#recipes">My Recipes</a>
-       <button onclick="
-       window.location.assign('cart.html')
-       " >Add to cart</button>
-        <a href="#contact">Contact</a>
-    </nav>
-    <!-- start hero section -->
+    <section class="sliders">
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide fade-slide">
+                <img src="./images/IMG-20250209-WA0026.jpg" alt="Product 1">
+                <div class="text-overlay">
+                    <div class="line"></div>
+                    <div class="text-reveal"></div>
+                    <h2>Exclusive Deals</h2>
+                    <p>Get the best fashion & beauty products at unbeatable prices.</p>
+                </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="slide fade-slide">
+                <img src="./images/IMG-20250209-WA0027.jpg" alt="Product 2">
+                <div class="text-overlay">
+                    <div class="line"></div>
+                    <div class="text-reveal"></div>
+                    <h2>Fast & Reliable</h2>
+                    <p>We offer quick delivery and secure payments for a smooth shopping experience.</p>
+                </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="slide fade-slide">
+                <img src="./images/login.jpeg" alt="Product 3">
+                <div class="text-overlay">
+                    <div class="line"></div>
+                    <div class="text-reveal"></div>
+                    <h2>Wide Selection</h2>
+                    <p>From fashion to home essentials, we have it all for you.</p>
+                </div>
+            </div>
+    
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    
+            <!-- Active Circle Indicators -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+       
+        </section>
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-section">
-                <h1>WELCOME TO Jevemy styles lives</h1>
-                <h3>enjoy delicious recipees for evey occasion</h3>
+
+         <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Minister of Stomach Affairs</h2>
+            <p>Your one-stop shop for everything you need!</p>
+            <a href="#shop-now" class="btn hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+   
+</main>
+
+
+<main class="admin-welcome">
+    <!-- Admin Welcome Section -->
+    <section class="welcome-container">
+        <div class="welcome-text">
+            <h1>Welcome to Minister of Stomach Affairs Admin Panel</h1>
+            <p>Manage products, track orders, and oversee customer interactions with ease.</p>
+        </div>
+       
+        <!-- Login & Signup Buttons -->
+        <div class="auth-buttons">
+            <a href="02login.html" class="btn login-btn">Login</a>
+            <a href="admin-signup.html" class="btn signup-btn">Sign Up</a>
+        </div>
+    </section>
+
+    <!-- Quick Admin Features Overview -->
+    <section class="admin-features">
+        <h2>What You Can Do</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="manage-products-icon.png" alt="Manage Products">
+                <h3>Manage Products</h3>
+                <p>Add, edit, or remove products effortlessly.</p>
+            </div>
+            <div class="feature-card">
+                <img src="track-orders-icon.png" alt="Track Orders">
+                <h3>Track Orders</h3>
+                <p>Monitor customer orders and update statuses.</p>
+            </div>
+            <div class="feature-card">
+                <img src="analytics-icon.png" alt="View Analytics">
+                <h3>View Analytics</h3>
+                <p>Gain insights into sales, customers, and trends.</p>
             </div>
         </div>
     </section>
+</main>
 
-    <!-- start about-us section    -->
-    <section id="about">
-        <div class="section">
-            <h1>About Me</h1>
-            <p>Welcome to Jevemy Styles Lives, where culinary passion meets exceptional craftsmanship.
-                At Jevemy Styles Lives, we believe that food is more than just sustenance –
-                it's an art form, a cultural expression, and a way to bring people together.
-                Our journey began with a simple yet profound mission: to elevate everyday dining experiences by blending
-                creativity, quality, and innovation in every dish we create. From exquisite gourmet meals to delightful
-                home-cooked favorites, our culinary team is dedicated to delivering flavors that tantalize your taste
-                buds and leave lasting memories. What sets us apart is our commitment to excellence in every aspect of our service. We source the finest ingredients, embrace sustainable practices, and continuously explore new culinary trends to ensure that our offerings are not only delicious but also ethically and environmentally responsible.
 
-                At Jevemy Styles Lives, we are more than just a culinary company – we are a community of food enthusiasts who are passionate about sharing the joy of good food. Whether you're joining us for a special occasion, exploring our catering services, or simply enjoying our daily creations, we are honored to be a part of your culinary journey.
-                
-                Thank you for choosing Jevemy Styles Lives. Let's make every meal a masterpiece together!
-            </p>
-        </div>
-    </section>
-    
-    <!-- start recipe section -->
-     <section id="recipes">
-        <h1>Amazing recipe</h1>
-<div class="recipe-section">
-    <div class="recipe">
-        <img src="./images/0.PNG" alt="">
-        <h2>Carrot cake</h2>
-        <a href="add-to-cart.html?product=1" class="add-to-cart">Add to Cart</a>
-        <button onclick="addToCart(1, 'Product 1')">Add to Cart</button>
-    </div>
-    
-    <div class="recipe">
-        <img src="./images/banana.png" alt="">
-        <h2>Banana cake</h2>
-        <a href="add-to-cart.html?product=2" class="add-to-cart">Add to cart</a>
-        <button onclick="addToCart(2, 'Product 2')">Add to Cart</button>
-    </div>
-    <div class="recipe">
-        <img src="./images/Capturem.PNG" alt="">
-        <h2>vanilla cake</h2>
-        <a href="add-to-cart.html?product=3" class="add-to-cart">Add to cart</a>
-        <button onclick="addToCart(3, 'Product 3')">Add to Cart</button>
-    </div>
-    <div class="recipe">
-        <img src="./images/Capturevan.PNG" alt="">
-        <h2>strawberry cake</h2>
-        <a href="add-to-cart.html?product=4" class="add-to-cart">Add to cart</a>
-        <button onclick="addToCart(4, 'Product 4')">Add to Cart</button>
-    </div>
-    <div class="recipe">
-     <img src="./images/lo.PNG" alt="">
-        <h2>queens cake</h2>
-        <a href="add-to-cart.html?product=5" class="add-to-cart">Add to cart</a>
-        <button onclick="addToCart(5, 'Product 5')">Add to Cart</button>
-    </div>
-    <div class="recipe">
-        <img src="./images/samosa.png" alt="">
-        <h2>Banana cake</h2>
-        <a href="add-to-cart.html?product=6" class="add-to-cart">Add to cart</a>
-        <button onclick="addToCart(6, 'Product 6')">Add to Cart</button>
-    </div>
 
-</div>
-
-<script>
-    function addToCart(id, name) {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const existingProduct = cart.find(product => product.id === id);
-        if (existingProduct) {
-            existingProduct.quantity += 1;
-        } else {
-            cart.push({ id, name, quantity: 1 });
+    <script>
+        let slideIndex = 0;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        
+        function showSlides() {
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            // Remove "active" class from all dots
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+        
+            // Move to next slide
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; } // Loop back to first slide
+        
+            // Display current slide
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].classList.add("fade-slide"); // Ensure transition works
+            dots[slideIndex - 1].classList.add("active");
+        
+            setTimeout(showSlides, 4000); // Auto-change slides every 4s
         }
-        localStorage.setItem('cart', JSON.stringify(cart));
-        alert(`${name} added to cart!`);
-    }
-</script>
-     </section>
-     <!-- start contact-us section -->
-     <section id="contact" class="section contact">
-        <h2>Contact</h2>
-        <p>Feel free to get in touch with me:</p>
-        <ul>
-            <li>Email: johnbanigo0122@gmail.com</li>
-            <li>Phone: +234(0)8051286077</li>
-            <li>Address: 26 mini woji portharcourt river state</li>
-        </ul>
-    </section>
-</div>
-<footer>
-    <p>&COPY; 2024 Jevemy style. all right reseerved</p>
-</body>
+        
+        // Manual Slide Navigation
+        function changeSlide(n) {
+            slideIndex += n - 1;
+            if (slideIndex < 1) slideIndex = slides.length;
+            if (slideIndex > slides.length) slideIndex = 1;
+            showSlides();
+        }
+        
+        // Direct Slide Selection
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+        
+        // Start the slideshow
+        showSlides();
+ 
+// Add interactivity: pause on hover
+const sliderContainer = document.querySelector('.slider-container');
+sliderContainer.addEventListener('mouseover', () => clearInterval(slideInterval));
+sliderContainer.addEventListener('mouseleave', () => slideInterval = setInterval(nextSlide, 4000));
 
+let slideInterval = setInterval(nextSlide, 4000);
+    </script>
+    <script src="script.js"></script>
+</body>
 </html>

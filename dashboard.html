@@ -1,0 +1,23 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, <span id="user-name"></span>!</h2>
+    <button onclick="logout()">Logout</button>
+    <script>
+        let userName = sessionStorage.getItem('loggedInUser');
+        if (!userName) {
+            window.location.href = 'login.html';
+        } else {
+            document.getElementById('user-name').innerText = userName;
+        }
+        function logout() {
+            sessionStorage.removeItem('loggedInUser');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
